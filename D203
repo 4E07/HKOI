@@ -1,12 +1,16 @@
+import math
 n = int(input())
 for i in range(1,101):
     if i %10 == n :
-         print('clap',end=' ')
+         print('clap',end='')
     elif math.floor (i/10) == n :
-         print('clap',end=' ')
+         print('clap',end='')
     elif i%n == 0 :
-         print('clap',end=' ')
-    elif i%10 == 0 :
-        print('clap', end= '\n')
-else:
-    print(i)
+         print('clap',end='')
+    else:
+        print(i, end='')
+
+    if i % 10 ==0 :
+        print()
+    else :
+        print(" ", end="")
